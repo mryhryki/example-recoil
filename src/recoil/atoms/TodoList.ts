@@ -11,7 +11,7 @@ const todoListState = atom<Todo[]>({
   key,
   default: [],
   effects: [
-    localStorageEffect('TodoList'),
+    localStorageEffect(key),
   ]
 })
 
