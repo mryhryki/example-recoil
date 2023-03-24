@@ -1,5 +1,6 @@
 import {atom, useRecoilState} from "recoil";
-import {localStorageEffect} from "@/recoil/effects/localStorageEffect";
+import {localStorageEffect} from "../effects/localStorageEffect";
+import {urlSyncEffect} from "@/recoil/effects/urlSyncEffect";
 
 interface Todo {
   id: string,
@@ -11,6 +12,7 @@ const todoListState = atom<Todo[]>({
   key,
   default: [],
   effects: [
+    urlSyncEffect(key),
     localStorageEffect(key),
   ]
 })
