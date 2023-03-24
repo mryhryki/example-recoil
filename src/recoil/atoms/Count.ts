@@ -7,8 +7,8 @@ const countState = atom({
   key,
   default: 0,
   effects: [
-    urlSyncEffect(key),
     localStorageEffect(key),
+    urlSyncEffect(key),
   ]
 })
 
