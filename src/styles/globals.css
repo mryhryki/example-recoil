@@ -95,6 +95,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+section {
+  margin: 20px 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
