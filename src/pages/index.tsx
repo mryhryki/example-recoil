@@ -2,8 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import {useCountState} from "@/recoil/atoms/Count";
+import {useTodoListState} from "@/recoil/atoms/TodoList";
+import {useState} from "react";
+import * as crypto from "crypto";
 
 export default function Home() {
   return (
