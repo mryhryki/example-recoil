@@ -24,7 +24,7 @@ export default function Home() {
           <h2>Counter</h2>
           <button style={{padding: '4px 8px'}} onClick={() => setCount((currentValue) => currentValue - 1)}>＜</button>
           <span style={{margin: '0 1rem'}}>
-          {count}
+            {count}
           </span>
           <button style={{padding: '4px 8px'}} onClick={() => setCount((currentValue) => currentValue + 1)}>＞</button>
         </section>
